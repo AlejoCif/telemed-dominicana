@@ -5,6 +5,13 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Telemed Republica Dominicana</title>
+  <script>
+    (function() {
+      if (!new URLSearchParams(window.location.search).has('from')) {
+        window.location.replace('https://telemed-group.cl/');
+      }
+    })();
+  </script>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
