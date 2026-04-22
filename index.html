@@ -8,7 +8,8 @@
   <title>Telemed Republica Dominicana</title>
   <script>
     (function() {
-      if (!new URLSearchParams(window.location.search).has('from')) {
+      const _p = new URLSearchParams(window.location.search);
+      if (!_p.has('from') && !_p.has('enviado')) {
         window.location.replace('https://telemed-group.cl/');
       }
     })();
